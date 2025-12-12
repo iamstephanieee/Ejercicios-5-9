@@ -1,0 +1,27 @@
+nombres = []
+horas = []
+pago_hora = 16.25
+
+while True:
+    nombre = input("Dime tu nombre: ")
+    if nombre == "":
+        break
+
+    semana = []
+    print("Dime las horas extras por semana: ")
+    for i in range(4):
+        h = float(input(f"Semana{i+1}: "))
+        semana.append(h)
+
+    nombres.append(nombre)
+    horas.append(semana)
+
+total_extras = []
+
+for semana in horas:
+    total = sum(semana) * pago_hora
+    total_extras.append(total)
+
+print("\nTotal horas extras:")
+for i in range(len(nombres)):
+    print(nombres[i], total_extras[i], "€")
