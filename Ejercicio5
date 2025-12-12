@@ -1,0 +1,16 @@
+import random
+lista = [ ]
+
+for i in range(5):
+	numero = random.randint(1, 10)
+	lista.append(numero)
+
+print(" U  D  C  M")
+for numero in lista:
+	u = numero * 1
+	d = numero * 10
+	c = numero * 100
+	m = numero * 1000
+
+	print(u, d , c, m)
+

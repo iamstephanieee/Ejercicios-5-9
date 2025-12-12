@@ -24,4 +24,4 @@ for semana in horas:
 
 print("\nTotal horas extras:")
 for i in range(len(nombres)):
-    print(nombres[i], total_extras[i], "€")
+    print(nombres[i], total_extras[i],)
