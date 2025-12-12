@@ -1,0 +1,25 @@
+nom = []
+ed = []
+
+while True:
+    nombre = input("Dime tu nombre: ")
+
+    if nombre == "-": 
+        break
+
+    edad = int(input("Dime tu edad: "))
+    nom.append(nombre)
+    ed.append(edad)
+
+print("Mayores de edad:")
+for i in range(len(nom)):
+    if ed[i] >= 18:
+        print(nom[i], ed[i])
+
+
+
+print("Dos mayores:")
+print(nom[0], ed[0])
+print(nom[1], ed[1])
+
+
